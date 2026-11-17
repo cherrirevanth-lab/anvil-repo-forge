@@ -1,0 +1,15 @@
+{
+  "name": "@anvil/repo-forge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Exports a repository as one verifiable bundle and reconstructs it byte-for-byte.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/",
+    "start": "node src/cli.mjs",
+    "verify": "node verify.mjs"
+  },
+  "keywords": ["reproducible", "sha256", "bundle", "reconstruct"],
+  "license": "MIT"
+}

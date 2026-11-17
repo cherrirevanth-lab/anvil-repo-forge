@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "project": "20-repo-forge",
+  "runtime": { "kind": "node", "minVersion": "22", "dependencies": 0 },
+  "network": { "required": false, "hosts": [] },
+  "secrets": [],
+  "environment": [],
+  "filesystem": [
+    { "scope": "read", "path": "directories passed on the command line" },
+    { "scope": "write", "path": "directories passed on the command line" }
+  ],
+  "processes": { "spawns": [], "reason": "none" },
+  "github": {
+    "workflowPermissions": { "contents": "read" },
+    "reason": "CI only reads the repository; no writes, no secrets, no packages"
+  },
+  "humanApprovalRequiredFor": [
+    "importing a bundle from an untrusted source (it writes a whole tree)",
+    "deleting the target directory of an import"
+  ]
+}

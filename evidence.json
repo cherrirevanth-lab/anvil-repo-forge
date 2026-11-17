@@ -1,0 +1,18 @@
+{
+  "project": "20-repo-forge",
+  "node": "v26.13.0",
+  "ok": true,
+  "durationMs": 597,
+  "checks": [
+    {
+      "name": "unit-tests",
+      "ok": true,
+      "detail": "14 passed, 0 failed"
+    },
+    {
+      "name": "cli-smoke",
+      "ok": true,
+      "detail": "export/import roundtrip verified"
+    }
+  ]
+}
